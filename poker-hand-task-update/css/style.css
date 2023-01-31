@@ -1,0 +1,161 @@
+.outer-container {
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+
+.card {
+    border-radius: 20px;
+    transition: transform 0.7 linear;
+    box-shadow:0 8px 16px rgba(0, 0, 0, 0.5)
+}
+
+
+.one {
+    display: flex;
+    width: 180px;
+    height: 230px;
+    background-color: azure;
+    border: 1px solid;
+    position: relative;
+    margin: 5px;
+    left:340px;
+    top:10px;
+    transform:rotate(-20deg);
+    transition:transform 1s ease;
+    /* border: 5px dotted; */
+    /* for demo purposes */
+}
+
+
+
+.one  img{
+        width: 140px;
+        height: 135px;
+        margin: auto;
+}
+
+.one:hover {
+    transform: translateY(-200px)  rotate(5deg);;
+}
+
+.two {
+    display: flex;
+    width: 180px;
+    height: 230px;
+    background-color: azure;
+    border: 1px solid;
+    margin: 5px;
+    position:relative;
+    left:175px;
+    transform:rotate(-5deg);
+    transition:transform 1s ease;
+
+}
+
+.two > img{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+.two:hover {
+    transform: translateY(-200px)  rotate(5deg);;
+}
+    
+
+.three {
+    display: flex;
+    width: 180px;
+    height: 230px;
+    background-color: azure;
+    border: 1px solid;
+    margin: 5px;
+    position:relative;
+    left:15px;
+    transition:transform 1s ease;
+
+}
+
+.three:hover {
+    transform: translateY(-200px) rotate(5deg);
+
+}
+
+.three > img{
+    width: 140px;
+    height: 135px;
+    margin: auto;
+}
+
+.four {
+    display: flex;
+    width: 180px;
+    height: 230px;
+    background-color: azure;
+    border: 1px solid;
+    margin: 5px;
+    position:relative;
+    right:150px;
+    transform:rotate(5deg);
+    transition:transform 1s ease;
+
+}
+
+
+.four > img{
+    width: 140px;
+    height: 135px;
+    margin: auto;
+}
+
+.four:hover {
+    transform: translateY(-200px)  rotate(5deg);;
+}
+
+.five{
+    display: flex;
+    width: 180px;
+    height: 230px;
+    background-color: azure;
+    border: 1px solid;
+    margin: 5px;
+    position:relative;
+    right:315px;    
+    top:15px;
+    transform:rotate(10deg);
+    transition:transform 1s ease;
+
+}
+
+.five:hover {
+    transform: translateX(40px);
+}
+
+
+.five > img{
+    width: 140px;
+    height: 120px;
+    margin: auto;
+}
+
+.card h1 {
+    position: absolute;
+    top: -15px;
+    left: 10px;
+}
+
+.card h2 {
+    position: absolute;
+    bottom: -15px;
+    right: 10px;
+}
