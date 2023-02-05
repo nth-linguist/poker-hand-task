@@ -1,13 +1,67 @@
+.body{
+    background-color: azure;
+    height: 100vh;
+    margin: 0;
+    /* display: grid; */
+    /* place-items: center; */
+}
+
 .cards{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    position: relative;
+    align-items: center;
+    /* position: relative;
+    position: absolute; */
+    /* top: 0%; */
+    /* left: 0; */
+    height: 100vh;
+    width: fit-content;
+    border-style: dashed;
+    border-width: 1rem;
+    border-color: red;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card {
     border-radius: 20px;
+    width: 200px;
+    margin-left: -8.5rem;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    
+    /* top: 50%; */
 }
+
+.ace {
+    display: flex;
+    width: 180px;
+    height: 230px;
+    background-color: azure;
+    border: 1px solid;
+    position: relative;
+    /* margin: 5px; */
+    z-index: 5;
+    
+
+    border: 5px dotted;
+    /* for demo purposes */
+
+}
+.ace  > img{
+        width: 140px;
+        height: 135px;
+        margin: auto;
+}
+
+.ace  > h1{
+   position: absolute;
+   top: -15px;
+   left: 10px;
+}
+
 
 .one {
     display: flex;
@@ -15,23 +69,17 @@
     height: 230px;
     background-color: azure;
     border: 1px solid;
-    position: relative;
-    margin: 5px;
-    /* border: 5px dotted; */
-    /* for demo purposes */
-}
-.one  > img{
-        width: 140px;
-        height: 135px;
-        margin: auto;
+    /* margin: 5px; */
+    position:relative;
+    z-index: 4;
+
 }
 
 .one  > h1{
-   position: absolute;
-   top: -15px;
-   left: 10px;
-}
-
+    position: absolute;
+    top: -15px;
+    left: 10px;
+ }
 
 .two {
     display: flex;
@@ -39,11 +87,13 @@
     height: 230px;
     background-color: azure;
     border: 1px solid;
-    margin: 5px;
+    /* margin: 5px; */
     position:relative;
+    z-index: 3;
+
 }
 
-.two  > h1{
+.two  > h1 {
     position: absolute;
     top: -15px;
     left: 10px;
@@ -55,8 +105,10 @@
     height: 230px;
     background-color: azure;
     border: 1px solid;
-    margin: 5px;
+    /* margin: 5px; */
     position:relative;
+    z-index: 2;
+
 }
 
 .three  > h1 {
@@ -71,8 +123,10 @@
     height: 230px;
     background-color: azure;
     border: 1px solid;
-    margin: 5px;
+    /* margin: 5px; */
     position:relative;
+    z-index: 1;
+
 }
 
 .four  > h1 {
@@ -81,25 +135,15 @@
     left: 10px;
  }
 
-.five{
-    display: flex;
-    width: 180px;
-    height: 230px;
-    background-color: azure;
-    border: 1px solid;
-    margin: 5px;
-    position:relative;
-}
-
-.five  > h1 {
-    position: absolute;
-    top: -15px;
-    left: 10px;
- }
-
-.two > img{
+.one > img{
     width: 100px;
     height: 100px;
+    margin: auto;
+}
+
+.two > img{
+    width: 140px;
+    height: 135px;
     margin: auto;
 }
 
@@ -111,12 +155,6 @@
 
 .four > img{
     width: 140px;
-    height: 135px;
-    margin: auto;
-}
-
-.five > img{
-    width: 140px;
     height: 120px;
     margin: auto;
 }
@@ -125,4 +163,47 @@
     position: absolute;
     bottom: -15px;
     right: 10px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+    cursor: pointer;
+    transform: translateY(-2rem);
+}
+
+.ace:hover {
+    rotate: -15deg;
+}
+
+.one:hover, .two:hover, .three:hover, .four:hover {
+    transform: translateY(-3rem);
+    /* transform: translateX(3rem); */
+    /* rotate: 8deg; */
+}
+
+.ace {
+    rotate:-14deg;
+    top:1.5rem;
+}
+
+.one{
+    rotate: -9deg;
+    top: 1rem;
+
+}
+
+.two {
+    rotate: -4deg;
+    top: 0.5rem;
+}
+
+.three{
+    rotate: 1deg;
+
+}
+
+.four{
+    rotate: 6deg;
+
 }
